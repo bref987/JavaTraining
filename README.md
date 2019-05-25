@@ -1,3 +1,3 @@
 # JavaTraining
 
-Branck "lesson02" - DataTypesTester task
+Branch "lesson02" - DataTypesTester task
