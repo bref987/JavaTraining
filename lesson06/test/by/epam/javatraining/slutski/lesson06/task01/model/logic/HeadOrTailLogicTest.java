@@ -14,7 +14,16 @@ public class HeadOrTailLogicTest {
 
     @Test
     public void testSpinCoin() {
-        System.out.println("spinCoin");
-        HeadOrTailLogic.spinCoin();
+        int spinNumber = 0;
+        int[] expResult = {0, 0};
+        int[] result = HeadOrTailLogic.spinCoin(spinNumber);
+        assertArrayEquals(expResult, result);
     }
+    @Test
+    public void testSpinCoinNegative() {
+        int spinNumber = -10;
+        int[] expResult = {0, 0};
+        int[] result = HeadOrTailLogic.spinCoin(spinNumber);
+        assertArrayEquals(expResult, result);
+    } 
 }

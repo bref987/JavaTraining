@@ -9,8 +9,9 @@ public class SequenceOrderLogic {
         number = number > 0 ? number : -number;
         int decider = 0;
         int refFirst = number % 10;
-        number /= 10;
         int refSecond;
+        number /= 10;
+        
 
         while (number > 0) {          
             refSecond = number % 10;           
@@ -24,9 +25,9 @@ public class SequenceOrderLogic {
         number = number > 0 ? number : -number;
         int decider = 0;
         int refFirst = number % 10;
-        number /= 10;
         int refSecond;
-
+        number /= 10;
+        
         while (number > 0) {          
             refSecond = number % 10;           
             decider = refFirst >= refSecond ? 1 : 0;
