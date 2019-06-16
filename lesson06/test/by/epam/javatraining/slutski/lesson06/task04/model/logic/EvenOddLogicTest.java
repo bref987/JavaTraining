@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  * @author slutski
  */
 public class EvenOddLogicTest {
-    
+
     public EvenOddLogicTest() {
     }
 
@@ -24,6 +24,7 @@ public class EvenOddLogicTest {
         boolean result = EvenOddLogic.verifyEven(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testVerifyEvenOdd() {
         int number = 13579;
@@ -31,6 +32,7 @@ public class EvenOddLogicTest {
         boolean result = EvenOddLogic.verifyEven(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testVerifyEvenNegative() {
         int number = -2468;
@@ -40,24 +42,11 @@ public class EvenOddLogicTest {
     }
 
     @Test
-    public void testVerifyOdd() {
-        int number = 13579;
+    public void testVerifyZero() {
+        int number = 0;
         boolean expResult = true;
-        boolean result = EvenOddLogic.verifyOdd(number);
+        boolean result = EvenOddLogic.verifyEven(number);
         assertEquals(expResult, result);
     }
-    @Test
-    public void testVerifyOddEven() {
-        int number = 2468;
-        boolean expResult = false;
-        boolean result = EvenOddLogic.verifyOdd(number);
-        assertEquals(expResult, result);
-    }
-    @Test
-    public void testVerifyOddnNegative() {
-        int number = -13579;
-        boolean expResult = true;
-        boolean result = EvenOddLogic.verifyOdd(number);
-        assertEquals(expResult, result);
-    }
+
 }

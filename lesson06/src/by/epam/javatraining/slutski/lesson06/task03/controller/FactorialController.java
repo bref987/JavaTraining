@@ -14,7 +14,7 @@ import by.epam.javatraining.slutski.lesson06.task03.view.Printer;
  */
 public class FactorialController {
     public static void main(String[] args) {
-        long number = 10L;
+        long number = 0;
         long factValue = FactorialLogic.calcFactorial(number);
         
         Printer.print(factValue);

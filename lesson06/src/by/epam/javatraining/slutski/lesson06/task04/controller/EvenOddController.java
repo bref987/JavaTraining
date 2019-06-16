@@ -9,9 +9,9 @@ import by.epam.javatraining.slutski.lesson06.task04.view.Printer;
  */
 public class EvenOddController {
     public static void main(String[] args) {
-        int number = 13579;
+        int number = 0;
         boolean even = EvenOddLogic.verifyEven(number);
-        boolean odd = EvenOddLogic.verifyOdd(number);
+        boolean odd = !EvenOddLogic.verifyEven(number);
         
         Printer.print(even);
         Printer.print(odd);

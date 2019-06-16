@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package by.epam.javatraining.slutski.lesson06.task05.model.logic;
 
 import org.junit.Test;
@@ -13,7 +8,7 @@ import static org.junit.Assert.*;
  * @author slutski
  */
 public class PrimeNumberLogicTest {
-    
+
     public PrimeNumberLogicTest() {
     }
 
@@ -24,6 +19,7 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsPrimeAlso() {
         int number = 19;
@@ -31,13 +27,15 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
-   @Test
+
+    @Test
     public void testIsPrimeOneMore() {
         int number = 31;
         boolean expResult = true;
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsPrimeMoreAnaMore() {
         int number = 409;
@@ -45,6 +43,7 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsPrimeLastHere() {
         int number = 547;
@@ -52,6 +51,7 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsNotPrime() {
         int number = 22;
@@ -59,6 +59,7 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsNotPrimeToo() {
         int number = 8;
@@ -66,6 +67,7 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testIsNotPrimeZero() {
         int number = 0;
@@ -73,6 +75,15 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
+
+    @Test
+    public void testIsNotPrimeOne() {
+        int number = 1;
+        boolean expResult = false;
+        boolean result = PrimeNumberLogic.isPrime(number);
+        assertEquals(expResult, result);
+    }
+
     @Test
     public void testIsNotPrimeNegative() {
         int number = -13;
@@ -80,5 +91,5 @@ public class PrimeNumberLogicTest {
         boolean result = PrimeNumberLogic.isPrime(number);
         assertEquals(expResult, result);
     }
-    
+
 }

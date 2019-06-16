@@ -20,19 +20,4 @@ public class HeadOrTailLogic {
         }
         return head;
     }
-    
-    /* public static int[] spinCoin(int spinNumber) {
-        int head = 0;
-        int tail = 0;
-        for (int i = 0; i < spinNumber; i++) {
-            int spin = new Random().nextInt(RANDOMRANGE);
-            if (spin == 0) {
-                head += 1;
-            } else {
-                tail += 1;
-            }
-        }
-        int[] headAndTail = {head, tail};
-        return headAndTail;
-    } */
 }

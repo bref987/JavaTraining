@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package by.epam.javatraining.slutski.lesson06.task03.model.logic;
 
 import org.junit.Test;
@@ -13,7 +8,7 @@ import static org.junit.Assert.*;
  * @author slutski
  */
 public class FactorialLogicTest {
-    
+
     public FactorialLogicTest() {
     }
 
@@ -24,6 +19,7 @@ public class FactorialLogicTest {
         long result = FactorialLogic.calcFactorial(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testCalcFactorialEight() {
         long number = 8L;
@@ -31,6 +27,7 @@ public class FactorialLogicTest {
         long result = FactorialLogic.calcFactorial(number);
         assertEquals(expResult, result);
     }
+
     @Test
     public void testCalcFactorialTen() {
         long number = 10L;
@@ -38,5 +35,21 @@ public class FactorialLogicTest {
         long result = FactorialLogic.calcFactorial(number);
         assertEquals(expResult, result);
     }
-    
+
+    @Test
+    public void testCalcFactorialNegative() {
+        long number = -10;
+        long expResult = -1;
+        long result = FactorialLogic.calcFactorial(number);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testCalcFactorialZero() {
+        long number = 0;
+        long expResult = 1;
+        long result = FactorialLogic.calcFactorial(number);
+        assertEquals(expResult, result);
+    }
+
 }
