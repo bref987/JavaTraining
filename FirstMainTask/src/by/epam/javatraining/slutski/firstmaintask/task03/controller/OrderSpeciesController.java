@@ -8,7 +8,7 @@ import by.epam.javatraining.slutski.firstmaintask.task03.model.logic.OrderSpecie
 public class OrderSpeciesController {
 
     public static void main(String[] args) {
-        double[] ar = new double[]{1, 1, 1, 1};
+        double[] ar = new double[]{1, 2, 3, 4};
 
         OrderSpeciesLogic.isOrdered(ar);
     }

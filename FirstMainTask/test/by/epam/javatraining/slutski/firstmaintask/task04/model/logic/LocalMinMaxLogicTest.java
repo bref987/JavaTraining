@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package by.epam.javatraining.slutski.firstmaintask.task04.model.logic;
 
 import org.junit.Test;
@@ -92,6 +87,22 @@ public class LocalMinMaxLogicTest {
     @Test
     public void testIsLocalMax() {
         double[] array = {10, 12, 12, 14, 16};
+        double expResult = -1.0;
+        double result = LocalMinMaxLogic.isLocalMax(array);
+        assertEquals(expResult, result, 0.0);
+    }
+    
+    @Test (expected = NullPointerException.class)
+    public void testIsLocalMinNull() {
+        double[] array = null;
+        double expResult = -1.0;
+        double result = LocalMinMaxLogic.isLocalMin(array);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test (expected = NullPointerException.class)
+    public void testIsLocalMaxNull() {
+        double[] array = null;
         double expResult = -1.0;
         double result = LocalMinMaxLogic.isLocalMax(array);
         assertEquals(expResult, result, 0.0);

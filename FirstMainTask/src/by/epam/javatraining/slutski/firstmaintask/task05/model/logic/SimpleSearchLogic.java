@@ -3,8 +3,9 @@ package by.epam.javatraining.slutski.firstmaintask.task05.model.logic;
 import org.apache.log4j.Logger;
 
 /**
- *
+ * Simple Search : linear search, binary search
  * @author slutski
+ * @version 1.1
  */
 public class SimpleSearchLogic {
 
@@ -22,8 +23,10 @@ public class SimpleSearchLogic {
         return -1;
     }
 
-    public static int makeBinarySearch(double[] array, double elem) {
+    public static int makeBinarySearch(int[] array, int elem) {
         // array must be already sorted to make binarySearch
+        MergeSortLogic.mergeSort(array);
+        
         int firstIndex = 0;
         int lastIndex = array.length - 1;
 
@@ -31,7 +34,7 @@ public class SimpleSearchLogic {
             int middleIndex = (firstIndex + lastIndex) / 2;
 
             if (array[middleIndex] == elem) {
-                logger.info("index of the element : " + middleIndex);
+                logger.debug("index of the element : " + middleIndex);
                 return middleIndex;
             } else if (array[middleIndex] < elem) {
                 firstIndex = middleIndex + 1;
@@ -39,7 +42,7 @@ public class SimpleSearchLogic {
                 lastIndex = middleIndex - 1;
             }
         }
-        logger.info("element not found");
+        logger.debug("element not found");
         return -1;
     }
 }

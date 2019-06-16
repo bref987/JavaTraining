@@ -12,16 +12,16 @@ import static org.junit.Assert.*;
  *
  * @author slutski
  */
-public class SortingAlgorithmsLogicTest {
+public class SimpleSortingAlgorithmsLogicTest {
 
-    public SortingAlgorithmsLogicTest() {
+    public SimpleSortingAlgorithmsLogicTest() {
     }
 
     @Test
     public void testBubbleSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SortingAlgorithmsLogic.bubbleSort(array);
+        int[] result = SimpleSortingAlgorithmsLogic.bubbleSort(array);
         assertArrayEquals(expResult, result);
     }
 
@@ -29,7 +29,7 @@ public class SortingAlgorithmsLogicTest {
     public void testInsertionSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SortingAlgorithmsLogic.insertionSort(array);
+        int[] result = SimpleSortingAlgorithmsLogic.insertionSort(array);
         assertArrayEquals(expResult, result);
     }
 
@@ -37,7 +37,7 @@ public class SortingAlgorithmsLogicTest {
     public void testSelectionSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SortingAlgorithmsLogic.selectionSort(array);
+        int[] result = SimpleSortingAlgorithmsLogic.selectionSort(array);
         assertArrayEquals(expResult, result);
     }
 
@@ -45,7 +45,7 @@ public class SortingAlgorithmsLogicTest {
     public void testMergeSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SortingAlgorithmsLogic.mergeSort(array);
+        int[] result = MergeSortLogic.mergeSort(array);
         assertArrayEquals(expResult, result);
     }
 
@@ -55,7 +55,7 @@ public class SortingAlgorithmsLogicTest {
         int begin = 0;
         int end = array.length - 1;
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SortingAlgorithmsLogic.quickSort(array, begin, end);
+        int[] result = QuickSortLogic.quickSort(array, begin, end);
         assertArrayEquals(expResult, result);
     }
 }

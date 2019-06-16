@@ -3,8 +3,9 @@ package by.epam.javatraining.slutski.firstmaintask.task10.model.logic;
 import static by.epam.javatraining.slutski.firstmaintask.task04.model.logic.LocalMinMaxLogic.logger;
 
 /**
- *
+ * Local min and max matrix values 
  * @author slutski
+ * @version 1.1
  */
 public class MatrixLocalMinMaxLogic {
 
@@ -20,7 +21,7 @@ public class MatrixLocalMinMaxLogic {
                 }
             }
         }
-        logger.info("local min : " + localMin);
+        logger.debug("local min : " + localMin);
         return localMin;
     }
 
@@ -36,7 +37,7 @@ public class MatrixLocalMinMaxLogic {
                 }
             }
         }
-        logger.info("local max : " + localMax);
+        logger.debug("local max : " + localMax);
         return localMax;
     }
 }

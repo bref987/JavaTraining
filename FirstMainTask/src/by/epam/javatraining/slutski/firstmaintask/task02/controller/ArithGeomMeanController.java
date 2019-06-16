@@ -9,8 +9,8 @@ import by.epam.javatraining.slutski.firstmaintask.task02.model.logic.ArithGeomMe
 public class ArithGeomMeanController {
 
     public static void main(String[] args) {
-        double[] array = new double[]{2, 2, 2, 2, 2};
-        ArithGeomMeanLogic.calcAm(array);
-        ArithGeomMeanLogic.calcGm(array);
+        double[] array = new double[]{2, 2, -52, 2, 2};
+        ArithGeomMeanLogic.calcArithMean(array);
+        ArithGeomMeanLogic.calcGeomMean(array);
     }
 }

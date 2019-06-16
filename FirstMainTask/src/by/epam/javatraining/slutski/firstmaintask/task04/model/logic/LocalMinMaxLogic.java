@@ -3,8 +3,9 @@ package by.epam.javatraining.slutski.firstmaintask.task04.model.logic;
 import org.apache.log4j.Logger;
 
 /**
- *
+ * Local min and max vector (array) values
  * @author slutski
+ * @version 1.0
  */
 public class LocalMinMaxLogic {
 
@@ -20,7 +21,7 @@ public class LocalMinMaxLogic {
                 break;
             }
         }
-        logger.info("local min : " + localMin);
+        logger.debug("local min : " + localMin);
         return localMin;
     }
 
@@ -34,7 +35,7 @@ public class LocalMinMaxLogic {
                 break;
             }
         }
-        logger.info("local min : " + localMax);
+        logger.debug("local min : " + localMax);
         return localMax;
     }
 }

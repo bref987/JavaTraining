@@ -3,10 +3,11 @@ package by.epam.javatraining.slutski.firstmaintask.task01.model.logic;
 import org.apache.log4j.Logger;
 
 /**
- *
+ * Min and Max vector (array) values searching  
  * @author slutski
+ * @version 1.0
  */
-public class MinMaxLogic {
+public class VectorMinMaxLogic {
 
     public static Logger logger = Logger.getRootLogger();
 
@@ -17,7 +18,7 @@ public class MinMaxLogic {
         for (int i = 1; i < length; i++) {
             min = min < array[i] ? min : array[i];
         }
-        logger.info("min element is  " + min);
+        logger.debug("min element is  " + min);
         return min;
     }
 
@@ -28,7 +29,7 @@ public class MinMaxLogic {
         for (int i = 1; i < length; i++) {
             max = max > array[i] ? max : array[i];
         }
-        logger.info("max element is " + max);
+        logger.debug("max element is " + max);
         return max;
     }
 }

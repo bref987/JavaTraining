@@ -4,8 +4,9 @@ import java.util.Arrays;
 import org.apache.log4j.Logger;
 
 /**
- *
+ * method to reverse array elements
  * @author slutski
+ * @version 1.1
  */
 public class ReversedArrayLogic {
 
@@ -19,7 +20,7 @@ public class ReversedArrayLogic {
             array[i] = array[length - 1 - i];
             array[length - 1 - i] = temp;
         }
-        logger.info(Arrays.toString(array));
+        logger.debug(Arrays.toString(array));
         return array;
     }
 }

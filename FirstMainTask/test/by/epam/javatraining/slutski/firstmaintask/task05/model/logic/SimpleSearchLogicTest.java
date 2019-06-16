@@ -59,8 +59,8 @@ public class SimpleSearchLogicTest {
 
     @Test
     public void testMakeBinarySearchFirstElem() {
-        double[] array = {0, 1, 2, 3, 4.0, 5, 6, 7, 8, 9, 10};
-        double elem = 0.0;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int elem = 0;
         int expResult = 0;
         int result = SimpleSearchLogic.makeBinarySearch(array, elem);
         assertEquals(expResult, result);
@@ -68,8 +68,8 @@ public class SimpleSearchLogicTest {
 
     @Test
     public void testMakeBinarySearchSecondElem() {
-        double[] array = {0, 1, 2, 3, 4.0, 5, 6, 7, 8, 9, 10};
-        double elem = 1.0;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int elem = 1;
         int expResult = 1;
         int result = SimpleSearchLogic.makeBinarySearch(array, elem);
         assertEquals(expResult, result);
@@ -77,8 +77,8 @@ public class SimpleSearchLogicTest {
 
     @Test
     public void testMakeBinarySearchThirdElem() {
-        double[] array = {0, 1, 2, 3, 4.0, 5, 6, 7, 8, 9, 10};
-        double elem = 2.0;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int elem = 2;
         int expResult = 2;
         int result = SimpleSearchLogic.makeBinarySearch(array, elem);
         assertEquals(expResult, result);
@@ -86,8 +86,8 @@ public class SimpleSearchLogicTest {
 
     @Test
     public void testMakeBinarySearchFourthElem() {
-        double[] array = {0, 1, 2, 3, 4.0, 5, 6, 7, 8, 9, 10};
-        double elem = 3.0;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int elem = 3;
         int expResult = 3;
         int result = SimpleSearchLogic.makeBinarySearch(array, elem);
         assertEquals(expResult, result);
@@ -95,8 +95,8 @@ public class SimpleSearchLogicTest {
 
     @Test
     public void testMakeBinaryNotFound() {
-        double[] array = {0, 1, 2, 3, 4.0, 5, 6, 7, 8, 9, 10};
-        double elem = 33.0;
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int elem = 33;
         int expResult = -1;
         int result = SimpleSearchLogic.makeBinarySearch(array, elem);
         assertEquals(expResult, result);
