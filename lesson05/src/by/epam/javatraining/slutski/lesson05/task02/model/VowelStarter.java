@@ -9,7 +9,7 @@ import by.epam.javatraining.slutski.lesson05.task02.model.logic.VowelChecker;
  */
 public class VowelStarter {
     public static void main(String[] args) {
-        boolean vowels = VowelChecker.findVowel('e');
+        boolean vowels = VowelChecker.findVowel('i');
         Printer.print(vowels);
     }
 }

@@ -8,9 +8,13 @@ import by.epam.javatraining.slutski.lesson05.task01.viewer.Printer;
  * @author slutski
  */
 public class DragonStarter {
-        public static void main(String[] args){
-        int heads = DragonHeadsAndEyes.calcHeads(50);
-        int eyes  = DragonHeadsAndEyes.calcEyes(50);
+
+    public static void main(String[] args) {
+        int years = 50;
+        int eyesNumber = 3;
+
+        int heads = DragonHeadsAndEyes.calcHeads(years);
+        int eyes = DragonHeadsAndEyes.calcHeads(years) * eyesNumber;
         Printer.print(heads);
         Printer.print(eyes);
     }
