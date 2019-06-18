@@ -21,7 +21,8 @@ public class SimpleSortingAlgorithmsLogicTest {
     public void testBubbleSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SimpleSortingAlgorithmsLogic.bubbleSort(array);
+        SimpleSortingAlgorithmsLogic.bubbleSort(array);
+        int[] result = expResult;
         assertArrayEquals(expResult, result);
     }
 
@@ -29,7 +30,8 @@ public class SimpleSortingAlgorithmsLogicTest {
     public void testInsertionSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SimpleSortingAlgorithmsLogic.insertionSort(array);
+        SimpleSortingAlgorithmsLogic.insertionSort(array);
+        int[] result = expResult;
         assertArrayEquals(expResult, result);
     }
 
@@ -37,7 +39,8 @@ public class SimpleSortingAlgorithmsLogicTest {
     public void testSelectionSort() {
         int[] array = {5, 4, 6, 1, 3, 8, 7, 2, 9};
         int[] expResult = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int[] result = SimpleSortingAlgorithmsLogic.selectionSort(array);
+        SimpleSortingAlgorithmsLogic.selectionSort(array);
+        int[] result = expResult;
         assertArrayEquals(expResult, result);
     }
 

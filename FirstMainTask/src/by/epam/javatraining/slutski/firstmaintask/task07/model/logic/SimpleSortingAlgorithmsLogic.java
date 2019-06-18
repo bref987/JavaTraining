@@ -12,7 +12,7 @@ public class SimpleSortingAlgorithmsLogic {
 
     public static Logger logger = Logger.getRootLogger();
 
-    public static int[] bubbleSort(int[] array) {
+    public static void bubbleSort(int[] array) {
         boolean sorted = true;
         int temp;
         while (sorted) {
@@ -29,10 +29,9 @@ public class SimpleSortingAlgorithmsLogic {
             length -= 1;
         }
         logger.debug(Arrays.toString(array));
-        return array;
     }
 
-    public static int[] insertionSort(int[] array) {
+    public static void insertionSort(int[] array) {
         int length = array.length;
         for (int i = 1; i < length; i++) {
             int current = array[i];
@@ -44,10 +43,9 @@ public class SimpleSortingAlgorithmsLogic {
             array[j + 1] = current;
         }
         logger.debug(Arrays.toString(array));
-        return array;
     }
 
-    public static int[] selectionSort(int[] array) {
+    public static void selectionSort(int[] array) {
         int length = array.length;
         for (int i = 0; i < length; i++) {
             int min = array[i];
@@ -63,6 +61,5 @@ public class SimpleSortingAlgorithmsLogic {
             array[minId] = temp;
         }
         logger.debug(Arrays.toString(array));
-        return array;
     }
 }
